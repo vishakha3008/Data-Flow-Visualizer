@@ -1,0 +1,13 @@
+version: '3'
+services:
+  client:
+    image: romel0393/client2:latest
+    ports:
+      - "5174:5173"
+    # Add other client-specific configurations
+
+  server:
+    image: romel0393/chucknorris:latest
+    ports:
+      - "9001:9000"
+    # Add other server-specific configurations

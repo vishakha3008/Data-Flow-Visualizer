@@ -1,0 +1,1 @@
+nodemon.json contains the environment variables
