@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 
 const nodeSchema=mongoose.Schema({
-    //_id: mongoose.Schema.Types.ObjectId,
+    
     id:{type:String,required:true},
     type:{type:String,required:true},
     position:{

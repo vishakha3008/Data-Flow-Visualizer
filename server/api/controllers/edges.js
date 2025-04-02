@@ -57,7 +57,6 @@ exports.edges_get_all=function(req,res,next){             //Returns all edges th
     exports.edges_post=function(req,res,next){             //Adds a new edge
         const edge= new Edge({
             _type: req.body._type,
-            //_id: new mongoose.Types.ObjectId(),
             id :req.body.id,
             source:req.body.source,
             target:req.body.target,

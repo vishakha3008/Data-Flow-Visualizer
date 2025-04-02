@@ -4,7 +4,7 @@ const nodesEdgesSchema = new mongoose.Schema({
   nodes: [
     {
       _type:{type:String},
-      //_id: mongoose.Schema.Types.ObjectId,
+      
       id: { type:String, required: true },
       type: { type: String, required: true },
       data: { type: Object },
@@ -18,7 +18,7 @@ const nodesEdgesSchema = new mongoose.Schema({
   edges: [
     {
       _type:{type:String},
-      //_id: mongoose.Schema.Types.ObjectId,
+      
       id: { type: String, required: true },
       source: { type: String, required: true },
       target: { type: String, required: true },

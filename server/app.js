@@ -34,38 +34,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-// app.use(function (req, res, next) {
-//     res.header('Access-Control-Allow-Origin', '*');
-//     res.header('Access-Control-Allow-Headers', '*');
-//     if (req.method === 'OPTIONS') {
-//         res.header('Access-Control-Allow-Methods', 'GET,PATCH,DELETE,POST,PUT');
-//         return res.status(200).json({});
-//     }
-//     next();
-// });
 
-
-/*app.post('/api/auth/google', async (req, res) => {
-    try {
-        const { googleId, email } = req.body;
-        let user = await User.findOne({ googleId });
-
-        if (!user) {
-            user = new User({ googleId, email, role: 'viewer' });
-            await user.save();
-        }
-
-        const roleMapping = await RoleMapping.findOne({ role: user.role });
-        user.permissions = roleMapping ? roleMapping.permissions : [];
-
-        res.status(200).json({ message: 'User authenticated and saved successfully', user });
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Internal server error' });
-    }
-});*/
-
-// Use the router for the /flows route
 app.use('/flows', flowsRoutes);
 
 // Error handling middleware

@@ -60,7 +60,7 @@ exports.nodes_get_all=function(req,res,next){             //Returns all nodes th
     exports.nodes_post=function(req,res,next){             //Adds a new node
         const node= new Node({
             _type:req.body._type,
-            //_id: new mongoose.Types.ObjectId(),
+            
             id :req.body.id,
             type:req.body.type,
             data:req.body.data,
@@ -100,7 +100,7 @@ exports.nodes_get_all=function(req,res,next){             //Returns all nodes th
         Node.deleteOne({ id: id })
           .exec()
           .then(result => {
-            console.log(result); // Log the result to see what was deleted
+            console.log(result); 
             if (result.deletedCount > 0) {
               res.status(200).json({ message: "Deleted Successfully" });
             } else {
@@ -115,24 +115,3 @@ exports.nodes_get_all=function(req,res,next){             //Returns all nodes th
           });
       };
 
-    // exports.nodes_put = async (req, res, next) => {
-    //     const nodeId = req.params.id;
-    //     const newPosition = req.body.newPosition;
-      
-    //     try {
-    //       // Update the node in MongoDB based on the provided nodeId
-    //       const updatedNode = await Node.findOneAndUpdate(
-    //         { id: nodeId },
-    //         { position: newPosition },
-    //         { new: true } // Return the updated document
-    //       );
-      
-    //       if (updatedNode) {
-    //         res.status(200).json({ message: 'Node position updated successfully', node: updatedNode });
-    //       } else {
-    //         res.status(404).json({ message: 'No valid entry found for the provided nodeId' });
-    //       }
-    //     } catch (error) {
-    //       res.status(500).json({ message: 'Error updating node position', error: error.message });
-    //     }
-    //   };

@@ -22,7 +22,7 @@ exports.nodes_edges_get_all = function (req, res, next) {
       const response = {
         nodes: nodes.map(node => ({
           _type: node._type,
-          //_id: node._id,
+          
           id: node.id,
           type: node.type,
           data: node.data,
