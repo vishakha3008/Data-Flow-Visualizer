@@ -1,0 +1,29 @@
+/* .loginpage {
+    background-color: #134780;
+} */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* This ensures the container takes the full height of the viewport */
+  }
+
+  .bodysign {
+    background-color: #134780;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }

@@ -1,0 +1,96 @@
+.popup-overlay {
+    position: fixed;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+.edge-popup {
+     background-color: #131010;
+     width: 60vw;
+     max-height: 50vh; 
+     height: auto;
+     overflow-y: auto; 
+     padding: 20px;
+     border-radius: 25px;
+     box-shadow: 5px 5px 2px #422d2d;
+}
+
+  
+  .edge-popup h5 {
+    margin: 20px;
+    margin-bottom: 2rem;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    
+  }
+  
+  .edge-popup div {
+    margin-bottom: 1px;
+  }
+  .data input{
+    margin-left: 5%;
+  }
+  .edge-popup input {
+    margin-right: 0.5rem;
+  }
+  .buttons {
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    gap: 5%;
+  }
+  .add, .save_button, .close{
+    border-radius: 15px;
+    border: 2px solid black;
+    height: 30%;
+    width: 30%;
+  }
+  .add{
+    background-color:white;
+    width: 20%;
+    border-radius: 50px;
+  }
+  .add:hover{
+    background-color: #fbff00;
+  }
+  .save_button{
+    width: 20%;
+    background-color:white;
+    border-radius: 50px;
+  }
+  .save_button:hover{
+    background-color:  rgb(21, 247, 0);
+  }
+  .close{
+    background-color: white;
+    width: 20%;
+    border-radius: 50px;
+  }
+  .close:hover{
+    background-color: #f50e06;
+  }
+  .X{
+    font-size: medium;
+    margin-left: 1rem;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+  }
+  .X:hover{
+    background-color: #d60600;
+  }
+  
+  .att-val{
+    padding: 0 2%;
+    width: 40%;
+  }
